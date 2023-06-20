@@ -1,2 +1,2 @@
-# Gerenciador de Hospital
- Um app web simples para gerenciar processos do hospital.
+# Gerenciador-de-Hospital-Simples
+ Gerenciador de Hospital Simples, feito em angular v16 e Firebase
