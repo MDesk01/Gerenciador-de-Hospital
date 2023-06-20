@@ -1,0 +1,16 @@
+<mat-sidenav-container class="sidenav-container">
+<mat-toolbar class="header mat-elevation-z6" color="primary">
+  <button mat-mini-fab (click)="drawer.toggle()" color="primary"><mat-icon>menu</mat-icon></button>
+</mat-toolbar>
+<mat-toolbar></mat-toolbar>
+
+<mat-drawer-container class="drawer-container">
+  <mat-drawer #drawer mode="over" opened >
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+    <br>
+  </mat-drawer-content>
+</mat-drawer-container>
+</mat-sidenav-container>

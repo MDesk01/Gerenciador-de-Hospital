@@ -1,0 +1,24 @@
+<h2 style="font-weight: 700;" class="mt-3" color="primary">Informações do Paciente</h2>
+<mat-card class="m-3">
+
+  <mat-card-title class="pb-2">
+    Nome do Paciente : <b>{{patientObj?.patient_name}}</b>
+  </mat-card-title>
+  <mat-divider></mat-divider>
+
+    <div class="row pt-3">
+      <div class="col-md-6">
+        <mat-card-content>
+          <span> Nome do(a) médico(a) : </span> {{patientObj.doctor_name}} <br>
+          <span> Telefone : </span> {{patientObj.mobile}} <br>
+          <span> Prescição : </span> {{patientObj.prescription}}
+        </mat-card-content>
+      </div>
+      <div class="col-md-6">
+       <mat-card-content>
+        <span> Gênero : </span> {{patientObj.gender}} <br>
+        <span> Data de Admissão: </span> {{patientObj.admission_date | date}}
+       </mat-card-content>
+      </div>
+    </div>
+</mat-card>

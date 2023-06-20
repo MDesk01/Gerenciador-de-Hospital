@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <p>Deseja relmente deletar o(a) médico(a) {{doctorName}} ? </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="close()">Fechar</button>
+  <button mat-raised-button color="warn" (click)="delete()">Confirmar</button>
+</div>
